@@ -16,23 +16,19 @@ let job = {
 
 let totalAdultYears;
 
-function calculateAdultYears() {
-  return age - 18;
+function calculateAdultYears(userAge) {
+  return userAge - 18;
 }
 
-totalAdultYears = calculateAdultYears();
+totalAdultYears = calculateAdultYears(age);
 alert(totalAdultYears);
 
 age = 45;
-totalAdultYears = calculateAdultYears();
+totalAdultYears = calculateAdultYears(age);
 
 alert(totalAdultYears);
 
 
-
-// alert(hobbies[3]);
-// // alert(hobbies);
-// alert("$" + job.salary + " " + job.title);
 
 // // (papas code :) /////////////////////////////////////////////////////////
 // let infoUser = { fName: "Nohid", lName: "Akhmed", age: 12 };
@@ -42,4 +38,14 @@ alert(totalAdultYears);
 // // let fullName = fName + ' ' + lName;
 // let fullName = `${fName} ${lName}`;
 // // alert(fullName) 
+
+function myCalc(x, y) {
+  let z;
+  z = x + y;
+  return z ;
+}
+
+let outputCalc = myCalc(9, 17);
+alert(outputCalc);
+
 
